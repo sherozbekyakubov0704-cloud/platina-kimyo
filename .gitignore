@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+platina_referral.db
+.env
