@@ -3,6 +3,7 @@
 import asyncio
 import html
 import sqlite3
+import os
 from urllib.parse import urlencode
 
 from aiogram import Bot, Dispatcher, F
@@ -10,7 +11,7 @@ from aiogram.filters import CommandStart, Command
 from aiogram.types import Message, CallbackQuery, ChatMemberUpdated, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
-TOKEN = "8812092136:AAGT1AoIDPzG1d9rkZCSoDedktcLEBRQuJI"
+TOKEN = os.getenv("8812092136:AAGT1AoIDPzG1d9rkZCSoDedktcLEBRQuJI")
 CHANNEL_ID = "@platina_kimyo"
 CHANNEL_USERNAME = "platina_kimyo"
 ADMIN_IDS = {6365300596}
